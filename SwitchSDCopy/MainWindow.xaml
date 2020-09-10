@@ -1,0 +1,39 @@
+﻿<Window x:Class="SwitchSDCopy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwitchSDCopy"
+        mc:Ignorable="d"
+        Title="SwitchSDCopy" Height="422" Width="506.64" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="sourceLabel" Content="Album folder:" HorizontalAlignment="Left" Height="27" Margin="30,41,0,0" VerticalAlignment="Top" Width="93"/>
+        <TextBox x:Name="sourceValue" HorizontalAlignment="Left" Height="22" Margin="137,45,0,0" TextWrapping="NoWrap" Text="E:\Nintendo\Album" VerticalAlignment="Top" Width="285" MaxLines="1"/>
+        <Button x:Name="sourceLookup" Content="..." HorizontalAlignment="Left" Margin="439,45,0,0" VerticalAlignment="Top" Width="24" Height="23" Click="SourceLookup_Click"/>
+        <Label x:Name="targetLabel" Content="Copy to:" HorizontalAlignment="Left" Height="27" Margin="30,82,0,0" VerticalAlignment="Top" Width="93"/>
+        <TextBox x:Name="targetValue" HorizontalAlignment="Left" Height="22" Margin="137,87,0,0" TextWrapping="NoWrap" Text="C:\" VerticalAlignment="Top" Width="285" MaxLines="1"/>
+        <Button x:Name="targetLookup" Content="..." HorizontalAlignment="Left" Margin="439,87,0,0" VerticalAlignment="Top" Width="24" Height="22" Click="TargetLookup_Click"/>
+        <CheckBox x:Name="checkFolder" Content="Maintain date folders" HorizontalAlignment="Left" Margin="43,141,0,0" VerticalAlignment="Top" Width="138" Checked="CheckFolder_Checked" Unchecked="CheckFolder_Unchecked"/>
+        <Button x:Name="executeButton" Content="Start" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="-1.012,0.115" Click="ExecuteButton_Click"/>
+        <RadioButton x:Name="folderPerDay" Content="Per day (y\m\d)" HorizontalAlignment="Left" Margin="88,161,0,0" VerticalAlignment="Top" GroupName="folderStructure" IsChecked="True" IsEnabled="False" Width="136"/>
+        <RadioButton x:Name="folderPerMonth" Content="Per month (y\m)" HorizontalAlignment="Left" Margin="88,181,0,0" VerticalAlignment="Top" GroupName="folderStructure" IsEnabled="False" Width="136"/>
+        <RadioButton x:Name="folderPerYear" Content="Per year (y)" HorizontalAlignment="Left" Margin="88,201,0,0" VerticalAlignment="Top" GroupName="folderStructure" IsEnabled="False" Width="136"/>
+        <CheckBox x:Name="separateShotsClips" Content="Separate shots and clips" HorizontalAlignment="Left" Margin="43,221,0,0" VerticalAlignment="Top" Checked="SeparateShotsClips_Checked" Unchecked="SeparateShotsClips_Unchecked"/>
+        <Label x:Name="screenshotLabel" Content="Screenshot folder name" HorizontalAlignment="Left" Margin="88,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="screenshotName" HorizontalAlignment="Left" Height="23" Margin="229,239,0,0" Text="Screenshots" VerticalAlignment="Top" Width="120" IsEnabled="False" MaxLines="1"/>
+        <Label x:Name="clipLabel" Content="Clips folder name" HorizontalAlignment="Left" Margin="88,264,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="clipName" HorizontalAlignment="Left" Height="23" Margin="229,267,0,0" Text="Clips" VerticalAlignment="Top" Width="120" IsEnabled="False" MaxLines="1"/>
+        <TextBox x:Name="albumName" HorizontalAlignment="Left" Height="23" Margin="173,295,0,0" Text="Album" VerticalAlignment="Top" Width="120" MaxLines="1" IsEnabled="False"/>
+        <CheckBox x:Name="extraCheck" Content="Include 'Extra' folder" HorizontalAlignment="Left" Margin="278,141,0,0" VerticalAlignment="Top" Checked="ExtraCheck_Checked" Unchecked="ExtraCheck_Unchecked"/>
+        <CheckBox x:Name="separateExtraCheck" Content="Separate 'Extra' folder" HorizontalAlignment="Left" Margin="327,164,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" IsEnabled="False"/>
+        <CheckBox x:Name="checkByGame" Content="Organize by game" HorizontalAlignment="Left" Margin="278,189,0,0" VerticalAlignment="Top" Checked="GameCheck_Checked" Unchecked="GameCheck_Unchecked"/>
+        <Label Content="andslg 2019" HorizontalAlignment="Left" Margin="0,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.462"/>
+        <CheckBox x:Name="checkCreateAlbum" Content="Create album folder" HorizontalAlignment="Left" Margin="43,298,0,0" VerticalAlignment="Top" Height="21" Checked="checkCreateAlbum_Checked" Unchecked="checkCreateAlbum_Unchecked"/>
+        <ComboBox x:Name="comboGameCode" HorizontalAlignment="Left" Margin="327,209,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Button x:Name="scanButton" Content="Scan Codes" HorizontalAlignment="Left" Margin="320,0,0,20" Width="75" Click="ScanButton_Click" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="SwitchSDCopy.ProgressPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwitchSDCopy"
+        mc:Ignorable="d"
+        Title="SwitchSDCopy" Height="221.935" Width="418.665" ResizeMode="NoResize"
+        Closing="ClosingX">
+    <Grid HorizontalAlignment="Left" Width="409" Height="190" VerticalAlignment="Bottom" Margin="0,0,0,1">
+        <ProgressBar x:Name="completionBar" Margin="36,24,91,141"/>
+        <TextBox x:Name="errorLogText" HorizontalAlignment="Center" Height="82" Margin="0,54" TextWrapping="Wrap" VerticalAlignment="Center" Width="336" Background="#FFE2E2E2" TextChanged="TextBox_TextChanged" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Center" Margin="0,141,0,28" VerticalAlignment="Center" Width="74" Height="21" Click="CancelButton_Click"/>
+        <Label x:Name="progressLabel" Content="0%" HorizontalAlignment="Left" Margin="318,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.223,-0.326" Height="25" Width="54" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
