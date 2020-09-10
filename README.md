@@ -41,32 +41,34 @@ ____
 
 Data and duplicates
 
-- This tool will not erase any data, both from the original album folder nor the destination folder.
+* This tool will not erase any data, both from the original album folder nor the destination folder.
 
-- The settings you define in the tool will be saved automatically, and overwritten, when you successfully start copying an album.
+* The settings you define in the tool will be saved automatically, and overwritten, when you successfully start copying an album.
 	These settings will not be saved when exiting the application.
 
-- The next time you copy your SD Card album you can copy it directly into the same folder as you did previously, as long as you utilize the exact same settings as before. Under those circumstances the tool will automatically skip files with the same name as the originals.
-- Also, if you copy an album that has already been partially copied before (E.g - if you did not clear your SD Card) the tool will skip already copied content and will go straight to the new content.
+* The next time you copy your SD Card album you can copy it directly into the same folder as you did previously, as long as you utilize the exact same settings as before. Under those circumstances the tool will automatically skip files with the same name as the originals.
+
+* Also, if you copy an album that has already been partially copied before (E.g - if you did not clear your SD Card) the tool will skip already copied content and will go straight to the new content.
 
 ____
 
 Game categories and customizing:
 
-- The SwitchSDCopy app will allow you to organize your content by game category.
-- Switch content file names contain the following data:
-	Year Month Day Hour Minute Second TimestampCounter - Gamecode
-	Eg. 2017120623304800-397A963DA4660090D65D330174AC6B04.jpg -> This would be a screenshot from 2017/12/06, 23:30:48, 0 counter - Splatoon 2.
-	(If you're curious, the timestamp counter is used to differentiate screenshots taken with the same timestamp.)
+* The SwitchSDCopy app will allow you to organize your content by game category.
+	- Switch content file names contain the following data:
+		-Year Month Day Hour Minute Second TimestampCounter - Gamecode
+	- Eg. 2017120623304800-397A963DA4660090D65D330174AC6B04.jpg -> This would be a screenshot from 2017/12/06, 23:30:48, 0 counter - Splatoon 2.
+		- (If you're curious, the timestamp counter is used to differentiate screenshots taken with the same timestamp.)
 
-- The file named "GameCodes.txt" contains a list of "[Code] [Game title]" that will be used to categorize your content.
-  The game title is the name that will be given to the corresponding game folder.
-  If different codes have the same game title their content will be placed under the same folder.
-     By default Splatoon 2 and Splatoon 2 (Demo) are arranged in this way.
-  You can also append folders to the game title. By default the Super Smash Bros Ultimate replays are placed into a Replays folder within the game category.
-  You are free to add, remove or modify these entries at your own discretion.
+* The file named "GameCodes.txt" contains a list of "[Code] [Game title]" that will be used to categorize your content.
+	- The game title is the name that will be given to the corresponding game folder.
+  	- If different codes have the same game title their content will be placed under the same folder.
+		- By default Splatoon 2 and Splatoon 2 (Demo) are arranged in this way.
+	- You can also append folders to the game title. By default the Super Smash Bros Ultimate replays are placed into a Replays folder within the game category.
+	- You are free to add, remove or modify these entries at your own discretion.
 
-- If any of your owned games is not in the "GameCodes.txt" file, you can use the Scan Codes option to automatically retrieve unknown codes.
-  You will then have to manually add them to this file in the same format -> "CODE Title"
+* If any of your owned games is not in the "GameCodes.txt" file, you can use the Scan Codes option to automatically retrieve unknown codes.
+	- You will then have to manually add them to this file in the same format mentioned above.
 
-- When copying the album, any files with unknown game codes will be placed in a directory named "Other".
+* When copying the album, any files with unknown game codes will be placed in a directory named "Other".
+	- If you later add these codes to "GameCodes.txt" you can simply repeat the copy operation and the tool will skip already copied content.
