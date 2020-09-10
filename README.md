@@ -7,27 +7,27 @@ TLDR - How to use the app:
 5. Manually add unknown codes to "GameCodes.txt" (See "Game categories and customizing" below)
 6. Start!
 
-===============================================================================================================================================
-===============================================================================================================================================
+____
+
 Settings explanation
 
-- Maintain date folders
+* Maintain date folders
 	- Keep part, or the entirety, of the date folder structure seen in the SD card album.
 
-- Separate shots and clips
+* Separate shots and clips
 	- Separate screenshots and clips into two different folders.
 
-- Create album folder
+* Create album folder
 	- Will add a new folder to the "Copy to:" directory
 	E.g Copy to: "C:\Switch" + Create album folder: "Album" = "C:\Switch\Album"
 	- Unchecking this option will copy the album content directly to the destination folder.
 
-- Include 'Extra' folder
+* Include 'Extra' folder
 	- This will include content from the Extra folder (E.g - Smash Ultimate Replays)
 	- You can opt to keep the extra folder separate from other clips/screenshots
 	- If you know of other games that utilize the Extra folder please inform me so that I may update the tool if necessary.
 
-- Organize by game
+* Organize by game
 	- Separate screenshots and clips by game.
 	- This setting will take all the other settings into account, separating by dates, screenshots and clips and extra folder.
 	- You can choose to copy all content or one particular game.
@@ -37,7 +37,8 @@ These settings take precedence, when applicable, in the following order:
 
 [TargetDirectory] \ AlbumName \ GameCategory \ Extra? \ ScreenshotOrClip \ Date \ content.jpgORmp4
 
-===============================================================================================================================================
+____
+
 Data and duplicates
 
 - This tool will not erase any data, both from the original album folder nor the destination folder.
@@ -45,12 +46,10 @@ Data and duplicates
 - The settings you define in the tool will be saved automatically, and overwritten, when you successfully start copying an album.
 	These settings will not be saved when exiting the application.
 
-- The next time you copy your SD Card album you can copy it directly into the same folder as you did previously, as long as you utilize the
-exact same settings as before. Under those circumstances the tool will automatically skip files with the same name as the originals.
-- Also, if you copy an album that has already been partially copied before (E.g - if you did not clear your SD Card) the tool will skip already
-copied content and will go straight to the new content.
+- The next time you copy your SD Card album you can copy it directly into the same folder as you did previously, as long as you utilize the exact same settings as before. Under those circumstances the tool will automatically skip files with the same name as the originals.
+- Also, if you copy an album that has already been partially copied before (E.g - if you did not clear your SD Card) the tool will skip already copied content and will go straight to the new content.
 
-===============================================================================================================================================
+____
 
 Game categories and customizing:
 
