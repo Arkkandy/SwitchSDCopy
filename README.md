@@ -19,7 +19,7 @@ Settings explanation
 
 * Create album folder
 	- Will add a new folder to the "Copy to:" directory
-	E.g Copy to: "C:\Switch" + Create album folder: "Album" = "C:\Switch\Album"
+		- E.g Copy to: "C:\Switch" + Create album folder: "Album" = "C:\Switch\Album"
 	- Unchecking this option will copy the album content directly to the destination folder.
 
 * Include 'Extra' folder
@@ -72,3 +72,4 @@ Game categories and customizing:
 
 * When copying the album, any files with unknown game codes will be placed in a directory named "Other".
 	- If you later add these codes to "GameCodes.txt" you can simply repeat the copy operation and the tool will skip already copied content.
+	- If you wish to delete the "Other" folder and it's content you will have to do so manually.
